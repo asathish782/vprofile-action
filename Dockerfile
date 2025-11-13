@@ -1,5 +1,5 @@
 FROM openjdk:11.0.11-slim AS BUILD_IMAGE
-RUN apt update && apt install maven -y
+RUN apt install maven -y
 COPY ./ vprofile-project
 RUN cd vprofile-project &&  mvn install 
 
